@@ -2,10 +2,8 @@ class SecretsController < ApplicationController
   before_action :require_login
 
   def show
-    if require_login
-      render :show
-    else
-      redirect_to './sessions/new'
+    if !require_login    
+      redirect_to '/login'
     end
 
   end
