@@ -7,14 +7,14 @@ class SessionsController < ApplicationController
       session[:name] = params[:name]
       redirect_to '/secret'
     else
-      redirect_to 'new'
+      redirect_to 'sessions/new'
     end
 
   end
 
   def destroy
     session.delete :name
-    redirect_to '/login'
+    redirect_to 'sessions/new'
   end
 
 end
