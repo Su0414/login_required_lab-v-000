@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'secrets/show'
+
   get 'sessions/new'
 
   # The priority is based upon order of creation: first created -> highest priority.
