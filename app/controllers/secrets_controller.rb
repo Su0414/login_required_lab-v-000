@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
     if require_login
       render :show
     else
-      redirect_to '/sessions/new'
+      redirect_to './sessions/new'
     end
 
   end
