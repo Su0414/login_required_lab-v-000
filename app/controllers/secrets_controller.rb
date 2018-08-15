@@ -1,8 +1,7 @@
 class SecretsController < ApplicationController
   before_action :require_login
 
-  def show
-    redirect_to '/sessions/new'
+  def show    
   end
 
   private
